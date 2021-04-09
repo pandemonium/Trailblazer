@@ -1,0 +1,48 @@
+Model
+  Account
+    ExternalId; E-mail; Name
+  Trail
+    Name; Frequency
+  Issue
+    Subject; Body
+  Order
+    Reference
+  Order Item
+    Product Id; Quantity; Price
+  Payment
+    Book-Date; Amount; Order Reference
+  Product
+    Sku; Name; Price; Specification (N issues or Some topic for a duration)
+
+Aggregates
+  Accounts
+  Topics
+  Orders    -- Are these part of Account?
+    (Order; Order Item; Payment)
+  Products
+
+Queries
+  Find Account
+  List Products
+  List Inventory
+  List Orders
+  List Payments
+
+Commands
+  Create Account
+    Account Created
+
+  Complete Payment
+    Payment Completed
+    (Order Paid)
+    (Inventory Item Added)
+
+  Create Order
+    Order Created
+
+  Add Product to Order
+    Product Added
+
+  Checkout Order
+    Order Checked-out
+    (Payment Created)

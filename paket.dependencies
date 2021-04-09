@@ -1,0 +1,15 @@
+source https://api.nuget.org/v3/index.json
+
+storage: none
+framework: netcoreapp3.1, netstandard2.0, netstandard2.1, net5.0
+
+nuget FSharp.Charting
+nuget FSharpPlus
+nuget NodaTime
+nuget Thoth.Json.Net
+nuget Microsoft.Data.SqlClient
+nuget Npgsql
+nuget Npgsql.NodaTime
+nuget Giraffe
+nuget Giraffe.ViewEngine
+nuget Ply

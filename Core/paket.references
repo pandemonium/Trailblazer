@@ -1,0 +1,6 @@
+FSharpPlus
+Thoth.Json.Net
+NodaTime
+Microsoft.Data.SqlClient
+Npgsql
+Npgsql.NodaTime

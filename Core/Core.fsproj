@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Blockchain.fs" />
+    <Compile Include="Reflection.fs" />
+    <Compile Include="Iteratee.fs" />
+    <Compile Include="Database.fs" />
+    <Compile Include="Model.fs" />
+    <Compile Include="Events.fs" />
+    <Compile Include="Control.fs" />
+    <Compile Include="EventLog.fs" />
+    <Compile Include="Aggregate/Cqrs.fs" />
+    <Compile Include="Aggregate/Accounts.fs" />
+    <Compile Include="Aggregate/Trails.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+  <Import Project="..\.paket\Paket.Restore.targets" />
+</Project>
